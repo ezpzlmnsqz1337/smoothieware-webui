@@ -105,3 +105,11 @@ a.editable-click {
     margin-top: -20px !important;
     margin-bottom: 0;
 }
+
+a.command-history-item:hover{
+    cursor: pointer;
+}
+
+.command-history {
+    overflow-y: scroll;
+}

@@ -24,6 +24,10 @@ msgstr ""
 msgid "Commands"
 msgstr ""
 
+#: www/partials/panels/commands.html:22
+msgid "Commands history"
+msgstr ""
+
 #: www/partials/panels/motor.html:6
 msgid "Controls"
 msgstr ""
@@ -67,6 +71,10 @@ msgstr ""
 
 #: www/partials/navbar.html:8
 msgid "Language:"
+msgstr ""
+
+#: www/partials/panels/macro.html:4
+msgid "Macros"
 msgstr ""
 
 #: www/partials/panels/motor.html:18

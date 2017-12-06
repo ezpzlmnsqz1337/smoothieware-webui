@@ -15,7 +15,6 @@
         ////////////////
 
         function activate() {
-            console.log('macroControllerActivated');
             DataService.registerOutput(vm);
         }        
     }

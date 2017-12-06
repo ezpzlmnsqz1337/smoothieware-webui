@@ -4,142 +4,146 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 
-#: www/index.html:168
+#: www/partials/panels/files.html:8
 msgid "Abort"
 msgstr ""
 
-#: www/index.html:64
-msgid "auto-check every:"
-msgstr ""
-
-#: www/index.html:207
+#: www/partials/panels/commands.html:17
 msgid "Autoscroll"
 msgstr ""
 
-#: www/index.html:98
+#: www/partials/panels/temp.html:42
 msgid "Bed"
 msgstr ""
 
-#: www/index.html:196
+#: www/partials/panels/commands.html:6
 msgid "Clear"
 msgstr ""
 
-#: www/index.html:194
+#: www/partials/panels/commands.html:4
 msgid "Commands"
 msgstr ""
 
-#: www/index.html:43
+#: www/partials/panels/commands.html:22
+msgid "Commands history"
+msgstr ""
+
+#: www/partials/panels/motor.html:6
 msgid "Controls"
 msgstr ""
 
-#: www/index.html:180
+#: www/partials/panels/files.html:20
 msgid "Delete"
 msgstr ""
 
-#: www/index.html:121
-msgid "enable second extruder"
-msgstr ""
-
-#: www/index.html:138
-#: www/index.html:145
+#: www/partials/panels/extruder.html:25
+#: www/partials/panels/extruder.html:32
 msgid "Extrude"
 msgstr ""
 
-#: www/index.html:136
+#: www/partials/panels/extruder.html:23
 msgid "Extruder T0"
 msgstr ""
 
-#: www/index.html:143
+#: www/partials/panels/extruder.html:30
 msgid "Extruder T1"
 msgstr ""
 
-#: www/index.html:119
+#: www/partials/panels/extruder.html:6
 msgid "Extruders"
 msgstr ""
 
-#: www/index.html:164
+#: www/partials/panels/files.html:4
 msgid "Files"
 msgstr ""
 
-#: www/index.html:208
+#: www/partials/panels/commands.html:18
 msgid "Filter temperatures"
 msgstr ""
 
-#: www/index.html:110
-msgid "Get temperature"
-msgstr ""
-
-#: www/index.html:80
+#: www/partials/panels/temp.html:24
 msgid "Heater T0"
 msgstr ""
 
-#: www/index.html:89
+#: www/partials/panels/temp.html:33
 msgid "Heater T1"
 msgstr ""
 
-#: www/index.html:28
+#: www/partials/navbar.html:8
 msgid "Language:"
 msgstr ""
 
-#: www/index.html:52
+#: www/partials/panels/macro.html:4
+msgid "Macros"
+msgstr ""
+
+#: www/partials/panels/motor.html:18
 msgid "Motors off"
 msgstr ""
 
-#: www/index.html:130
-#: www/index.html:73
+#: www/partials/panels/extruder.html:17
+#: www/partials/panels/temp.html:17
 msgid "Name"
 msgstr ""
 
-#: www/index.html:131
-#: www/index.html:74
+#: www/partials/panels/extruder.html:18
+#: www/partials/panels/temp.html:18
 msgid "Options"
 msgstr ""
 
-#: www/index.html:181
+#: www/partials/panels/files.html:21
 msgid "Print"
 msgstr ""
 
-#: www/index.html:167
+#: www/partials/panels/files.html:7
 msgid "Progress"
 msgstr ""
 
-#: www/index.html:166
+#: www/partials/panels/files.html:6
 msgid "Refresh"
 msgstr ""
 
-#: www/index.html:139
-#: www/index.html:146
+#: www/partials/panels/extruder.html:26
+#: www/partials/panels/extruder.html:33
 msgid "Reverse"
 msgstr ""
 
-#: www/index.html:64
-msgid "sec"
-msgstr ""
-
-#: www/index.html:205
+#: www/partials/panels/commands.html:15
 msgid "Send"
 msgstr ""
 
-#: www/index.html:204
+#: www/partials/panels/commands.html:14
 msgid "Send Command..."
 msgstr ""
 
-#: www/index.html:154
+#: www/partials/panels/extruder.html:41
 msgid "Settings"
 msgstr ""
 
-#: www/index.html:50
+#: www/partials/panels/motor.html:16
 msgid "Speed:"
 msgstr ""
 
-#: www/index.html:62
+#: www/partials/panels/temp.html:6
 msgid "Temperatures"
 msgstr ""
 
-#: www/index.html:169
+#: www/partials/panels/files.html:9
 msgid "Upload"
 msgstr ""
 
-#: www/index.html:75
+#: www/partials/panels/temp.html:19
 msgid "Value | Target"
+msgstr ""
+
+#: www/partials/panels/temp.html:8
+msgid "auto-check every:"
+msgstr ""
+
+#: www/partials/panels/extruder.html:8
+msgid "enable second extruder"
+msgstr ""
+
+#: www/partials/panels/temp.html:8
+msgid "sec"
 msgstr ""

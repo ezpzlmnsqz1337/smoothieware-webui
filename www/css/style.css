@@ -113,3 +113,12 @@ a.command-history-item:hover{
 .command-history {
     overflow-y: scroll;
 }
+
+#macroPanel .panel-body {
+    overflow-y: scroll;
+}
+
+.macro-content {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

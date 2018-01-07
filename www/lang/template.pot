@@ -8,6 +8,10 @@ msgstr ""
 msgid "Abort"
 msgstr ""
 
+#: www/partials/panels/macro.html:34
+msgid "Add macro"
+msgstr ""
+
 #: www/partials/panels/commands.html:17
 msgid "Autoscroll"
 msgstr ""
@@ -33,7 +37,12 @@ msgid "Controls"
 msgstr ""
 
 #: www/partials/panels/files.html:20
+#: www/partials/panels/macro.html:17
 msgid "Delete"
+msgstr ""
+
+#: www/partials/panels/macro.html:16
+msgid "Edit"
 msgstr ""
 
 #: www/partials/panels/extruder.html:25
@@ -106,6 +115,14 @@ msgstr ""
 #: www/partials/panels/extruder.html:26
 #: www/partials/panels/extruder.html:33
 msgid "Reverse"
+msgstr ""
+
+#: www/partials/panels/macro.html:15
+msgid "Run"
+msgstr ""
+
+#: www/partials/panels/macro.html:28
+msgid "Save"
 msgstr ""
 
 #: www/partials/panels/commands.html:15

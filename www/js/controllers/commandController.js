@@ -5,9 +5,9 @@
         .module('smoothieApp')
         .controller('CommandCtrl', CommandCtrl);
 
-    CommandCtrl.$inject = ['$scope', '$compile', 'DataService', 'localStorageService'];
+    CommandCtrl.$inject = ['$scope', 'DataService', 'localStorageService'];
 
-    function CommandCtrl($scope,  $compile, DataService, localStorageService) {
+    function CommandCtrl($scope, DataService, localStorageService) {
         var vm = this;
 
         vm.log = [];

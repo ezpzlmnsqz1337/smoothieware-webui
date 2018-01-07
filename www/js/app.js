@@ -13,8 +13,14 @@
             */
             //endRemoveIf(demo)
             ])
+        .filter('reverse', function() {
+            return function(items) {
+                return items.slice().reverse();
+            };
+        })
         .config(ConfigBlock)
         .run(RunBlock);
+        
 
     RunBlock.$inject = ['gettextCatalog', 'localStorageService', 'editableOptions', '$httpBackend'];
     ConfigBlock.$inject = ['localStorageServiceProvider', 'ChartJsProvider'];

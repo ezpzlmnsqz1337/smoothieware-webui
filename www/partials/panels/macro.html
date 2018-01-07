@@ -6,20 +6,36 @@
         <div class="panel-body panel-height">
             <li class="list-group-item" data-ng-repeat="macro in macroVM.macroList">
                 <div class="row">
-                    <div class="col-md-4 col-sm-5" data-ng-bind="macro.name"></div>
-                    <div class="col-md-4 macro-content hidden" data-ng-bind="macro.content"></div>
+                    <div class="col-md-4 col-sm-5" data-ng-bind="macro.name" data-ng-hide="macro.edit"></div>
+                    <div class="col-md-4 col-sm-5" data-ng-show="macro.edit">
+                        <input class="form-control" type="text" data-ng-model="macro.name" />
+                    </div>
+                    <div class="col-md-4 col-sm-5">
+                        <uib-progressbar class="progress-striped active" data-ng-show="macro.uploading" value="macro.percentage"><span data-ng-bind="macro.percentage + '%'" data-ng-hide="macro.percentage < 5"></span></uib-progressbar>
+                    </div>
                     <div class="col-md-4 col-sm-2">
                         <div class="pull-right">
-                            <button class="btn btn-xs btn-default" data-ng-click="fileVM.runMacro(macro)" translate>Run</button>
-                            <button class="btn btn-xs btn-default" data-ng-click="fileVM.editMacro(macro)" translate>Edit</button>
-                            <button class="btn btn-xs btn-default" data-ng-click="fileVM.deleteMacro(macro)" translate>Delete</button>
+                            <button class="btn btn-xs btn-default" data-ng-click="macroVM.runMacro(macro)" translate>Run</button>
+                            <button class="btn btn-xs btn-default" data-ng-click="macroVM.editMacro(macro)" translate>Edit</button>
+                            <button class="btn btn-xs btn-default" data-ng-click="macroVM.deleteMacro(macro)" translate>Delete</button>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 macro-content" data-ng-show="macro.edit">
+                        <textarea data-ng-model="macro.content" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 macro-content" data-ng-show="macro.edit">
+                        <button class="btn btn-xs btn-primary" data-ng-click="macroVM.saveMacro(macro)" translate>Save</button>
                     </div>
                 </div>
             </li>
         </div>
         <div class="panel-footer">
-            
+            <button class="btn btn-primary" data-ng-click="macroVM.createMacro()" translate>Create macro</button>
+            <button class="btn btn-primary" data-ngf-select="macroVM.uploadMacro($file)" data-ngf-accept="'.gco,.gcode'" translate>Upload macro</button>
         </div>        
     </div>
 </div>

@@ -22,7 +22,7 @@
             <span translate>Commands history</span>
         </div>
         <div class="panel-body panel-height command-history">
-            <div data-ng-repeat="command in cmdVM.cmdHistory track by $index" >
+            <div data-ng-repeat="command in cmdVM.cmdHistory | reverse track by $index" >
                 <a class='command-history-item' data-ng-click="cmdVM.fillCommand(command)" data-ng-bind="command"></a>
             <div>
         </div>

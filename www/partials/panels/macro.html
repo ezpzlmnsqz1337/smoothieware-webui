@@ -4,10 +4,22 @@
             <span translate>Macros</span>            
         </div>
         <div class="panel-body panel-height">
-            
+            <li class="list-group-item" data-ng-repeat="macro in macroVM.macroList">
+                <div class="row">
+                    <div class="col-md-4 col-sm-5" data-ng-bind="macro.name"></div>
+                    <div class="col-md-4 macro-content hidden" data-ng-bind="macro.content"></div>
+                    <div class="col-md-4 col-sm-2">
+                        <div class="pull-right">
+                            <button class="btn btn-xs btn-default" data-ng-click="fileVM.runMacro(macro)" translate>Run</button>
+                            <button class="btn btn-xs btn-default" data-ng-click="fileVM.editMacro(macro)" translate>Edit</button>
+                            <button class="btn btn-xs btn-default" data-ng-click="fileVM.deleteMacro(macro)" translate>Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </li>
         </div>
         <div class="panel-footer">
-            <button class="btn btn-default">Edit macro</button>
+            
         </div>        
     </div>
 </div>

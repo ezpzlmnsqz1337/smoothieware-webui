@@ -10,6 +10,8 @@
     function MacroCtrl($scope, DataService, localStorageService) {
         var vm = this;
        
+        vm.macroList = localStorageService.get('macros') != null ? localStorageService.get('macros') : [];
+
         activate();
 
         ////////////////

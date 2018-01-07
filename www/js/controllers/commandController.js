@@ -14,14 +14,13 @@
 
         vm.command = "";
         vm.commandOutput = "";
-        vm.cmdHistory = [];
+        vm.cmdHistory = localStorageService.get('cmd') != null ? localStorageService.get('cmd') : [];
         vm.cmdHistoryIdx = -1;
 
         vm.autoscrollEnabled = true;
         vm.filterOutput = false;
 
         vm.sendCommand = sendCommand;
-        vm.addCommandToHistoryOutput = addCommandToHistoryOutput;
         vm.fillCommand = fillCommand;
         vm.checkHistorySize = checkHistorySize;
         vm.handleKeyDown = handleKeyDown;
@@ -30,22 +29,12 @@
         vm.onFilterChange = onFilterChange;
         vm.updateOutput = updateOutput;
 
-        initHistory();
         activate();
 
         ////////////////
 
         function activate() {
             DataService.registerOutput(vm);
-        }
-
-        function initHistory(){
-            vm.cmdHistory = localStorageService.get('cmd') != null ? localStorageService.get('cmd') : [];
-            angular.element(document).ready(function () {                
-                for(var i = 0; i < vm.cmdHistory.length; i++){
-                    vm.addCommandToHistoryOutput(vm.cmdHistory[i]);
-                }
-            });
         }
 
         function sendCommand() {
@@ -59,7 +48,6 @@
                 .then(function (result_data) {
                     vm.updateOutput(result_data);
 
-                    vm.addCommandToHistoryOutput(vm.command);
                     vm.cmdHistory.push(vm.command);
                     localStorageService.set('cmd', vm.cmdHistory);
                     vm.checkHistorySize();
@@ -71,13 +59,6 @@
 
         function fillCommand(command){
             vm.command = command;
-        }
-
-        function addCommandToHistoryOutput(command){
-            var functionCall = "cmdVM.fillCommand(\""+command+"\")";
-            var cmdAnchor = "<a class='command-history-item' data-ng-click='"+functionCall+"'>"+command+"</a><br />";
-            var compiledAnchor = $compile(cmdAnchor)($scope);
-            angular.element(document.getElementById('commandHistoryOutput')).append(compiledAnchor);
         }
 
         function checkHistorySize(){

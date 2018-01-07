@@ -92,7 +92,7 @@
             //remove element from the array
             var index = vm.macroList.indexOf(macro);
             if (index > -1){
-                vm.macroList.splice(index);
+                vm.macroList.splice(index,1);
             }
             //update localstorage
             localStorageService.set('macros', vm.macroList);            

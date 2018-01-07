@@ -1,7 +1,11 @@
 <div id="macroPanel" class="col-lg-6 col-md-12">
     <div class="panel panel-default" data-ng-controller="MacroCtrl as macroVM">
         <div class="panel-heading">
-            <span translate>Macros</span>            
+            <span translate>Macros</span>
+            <div class="pull-right">
+                <button class="btn btn-xs btn-primary" data-ng-click="macroVM.createMacro()" translate>Create macro</button>
+                <button class="btn btn-xs btn-primary" data-ngf-select="macroVM.uploadMacro($file)" data-ngf-accept="'.gco,.gcode'" translate>Upload macro</button>                
+            </div>                  
         </div>
         <div class="panel-body panel-height">
             <li class="list-group-item" data-ng-repeat="macro in macroVM.macroList">
@@ -34,8 +38,6 @@
             </li>
         </div>
         <div class="panel-footer">
-            <button class="btn btn-primary" data-ng-click="macroVM.createMacro()" translate>Create macro</button>
-            <button class="btn btn-primary" data-ngf-select="macroVM.uploadMacro($file)" data-ngf-accept="'.gco,.gcode'" translate>Upload macro</button>
         </div>        
     </div>
 </div>

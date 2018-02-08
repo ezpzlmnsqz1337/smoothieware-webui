@@ -44,7 +44,7 @@
             var list = rawdata.split('\n');
             angular.forEach(list, function(value, key) {
                 value = value.trim();
-                if (value.match(/\.g(code)?$/)) {
+                if (value.match(/\.g(code)?$/) && !value.match(/macro\.g(code)?$/)) {
                     var file = {filename: value, uploading: false, percentage: 0};
                     vm.fileList.push(file);
                 }

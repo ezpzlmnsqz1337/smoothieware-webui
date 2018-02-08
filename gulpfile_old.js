@@ -40,36 +40,36 @@ function cdnizeAndCopy() {
             .pipe(removeCode({production: true}))
             .pipe(cdnizer([{
                 file: 'lib/bootstrap-css-only/css/bootstrap.min.css',
-                cdn: 'css/bootstrap.min.css'
+                cdn: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'
             }]))
 
             .pipe(cdnizer([{
                 file: 'lib/angular/angular.min.js',
-                cdn: 'js/angular.js'
+                cdn: 'https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js'
             }]))
             .pipe(cdnizer([{
                 file: 'lib/angular-sanitize/angular-sanitize.min.js',
-                cdn: 'js/angular-sanitize.min.js'
+                cdn: 'https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.7/angular-sanitize.min.js'
             }]))
             .pipe(cdnizer([{
                 file: 'lib/angular-bootstrap/ui-bootstrap-tpls.min.js',
-                cdn: 'js/ui-bootstrap-tpls.min.js'
+                cdn: 'https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js'
             }]))
             .pipe(cdnizer([{
                 file: 'lib/angular-gettext/dist/angular-gettext.min.js',
-                cdn: 'js/angular-gettext.min.js'
+                cdn: 'https://cdnjs.cloudflare.com/ajax/libs/angular-gettext/2.3.4/angular-gettext.min.js'
             }]))
             .pipe(cdnizer([{
                 file: 'lib/angular-xeditable/dist/js/xeditable.min.js',
-                cdn: 'js/xeditable.min.js'
+                cdn: 'https://cdnjs.cloudflare.com/ajax/libs/angular-xeditable/0.2.0/js/xeditable.min.js'
             }]))
             .pipe(cdnizer([{
                 file: 'lib/angular-local-storage/dist/angular-local-storage.min.js',
-                cdn: 'js/angular-local-storage.min.js'
+                cdn: 'https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.2.7/angular-local-storage.min.js'
             }]))
             .pipe(cdnizer([{
                 file: 'lib/ng-file-upload/ng-file-upload.min.js',
-                cdn: 'js/ng-file-upload.min.js'
+                cdn: 'https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.0.4/ng-file-upload.min.js'
             }]))
 /*
             // unlock when CDN version will be available
@@ -80,7 +80,7 @@ function cdnizeAndCopy() {
 */
             .pipe(cdnizer([{
                 file: 'lib/Chart.js/dist/Chart.js',
-                cdn: 'js/Chart.min.js'
+                cdn: 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js'
             }]))
             .pipe(gulp.dest('dist'))
     )

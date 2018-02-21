@@ -17,7 +17,7 @@
                         <div class="col-md-4 col-sm-5"><uib-progressbar class="progress-striped active" data-ng-show="macro.uploading" value="macro.percentage"><span data-ng-bind="macro.percentage + '%'" data-ng-hide="macro.percentage < 5"></span></uib-progressbar></div>
                         <div class="col-md-4 col-sm-2">
                             <div class="pull-right">
-                                <button class="btn btn-xs btn-default" data-ng-click="macroVM.deleteFile(macro)" translate>Delete</button>
+                                <button class="btn btn-xs btn-default" data-ng-click="macroVM.deleteMacro(macro)" translate>Delete</button>
                                 <button class="btn btn-xs btn-default" data-ng-click="macroVM.print(macro.filename)" translate>Print</button>
                             </div>
                         </div>
